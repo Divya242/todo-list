@@ -1,0 +1,138 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.main-div {
+  min-height: 100vh;
+  background: #060822;
+  display: flex;
+  justify-content: center;
+}
+
+.child-div {
+  text-align: center;
+  margin-top: 3rem;
+}
+.child-div figure img {
+  width: 6rem;
+  height: 7rem;
+}
+
+.child-div figcaption  {
+  color: white;
+  padding-top: 1rem;
+  font-size: 20px;
+}
+
+input {
+  min-width: 40rem;
+  height: 3.4rem;
+  padding: 2rem 1.2rem;
+  font-size: 1.8rem;
+  line-height: 1.42857143;
+  margin-top: 2rem;
+  color: rgb(58, 57, 57);
+  background-color: #fff;
+  background-image: none;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+}
+
+.button-div {
+  padding-top: 2rem;
+}
+
+.fa-plus {
+  font-weight: 900;
+  color: grey;
+  margin-left: -2rem;
+  font-size: 1.5rem;
+}
+
+.edit-btn {
+  font-weight: 900;
+  color: rgb(100, 214, 47);
+  margin-left: -2rem;
+  font-size: 1.5rem;
+}
+
+.checklist-CTA {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 50rem;
+    background-color: ghostwhite;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.checklist-CTA::after {
+  font-size: 18px;
+  content: "CHECKLIST";
+  }
+
+.checklist-CTA:hover::after {
+  content: "REMOVE ALL!";
+ }
+
+ .checklist-CTA:hover {
+ background-color: rgb(126, 128, 0);
+ border: 0px solid #1292e1;
+ color: white !important;
+ }
+
+ .showItems {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.eachItem {
+  min-width: 40vh;
+  background:chartreuse;
+  padding: 1.2rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.7rem;
+  margin-left: 1rem;
+}
+
+.eachItem:hover {
+  background: ghostwhite;
+  color: rgb(85, 41, 220);
+}
+
+.todo-btn {
+  display: flex;
+  justify-content: space-around;
+}
+
+.data {
+  width: 30rem;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.fa-trash-alt,
+.fa-edit {
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 10;
+  color: green;
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
+  font-size: 1.5rem;
+}
+
+.eachItem:hover .fa-trash-alt {
+  color: rgb(214, 47, 61);
+}
+
+.eachItem:hover .fa-edit {
+  color: rgb(100, 214, 47);
+}
+
+.eachItem:hover data {
+  color: rgb(85, 41, 220);
+}
